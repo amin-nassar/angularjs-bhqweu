@@ -1,0 +1,5 @@
+<p class="item">
+  <a ng-show="!link.children && link.isVisible"> {{link.title}} </a>
+  <a ng-show="link.children && link.isVisible"> {{link.title}} ></a>
+  <list class="sub-list" ng-show="link.children" item="link"></list>
+</p>
