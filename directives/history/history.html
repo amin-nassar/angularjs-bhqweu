@@ -1,0 +1,10 @@
+<section class="history">
+  <h3 ng-show="!history.length">Nothing To Show</h3>
+  <h3 ng-show="history.length">Browsing History</h3>
+  <ol>
+    <li ng-repeat="item in history track by $index">
+      <a ui-sref="{{item}}">{{item}}</a>
+    </li>
+  </ol>
+  <button ng-click="clear()">Clear History</button>
+</section>

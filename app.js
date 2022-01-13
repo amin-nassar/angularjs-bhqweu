@@ -15,6 +15,7 @@ import navBarDirective from './directives/navBar/navBar';
 import menuDirective from './directives/menu/menu';
 import linkDirective from './directives/link/link';
 import listDirective from './directives/list/list';
+import historyDirective from './directives/history/history';
 
 import counterDirective from './directives/counter/counter';
 
@@ -25,6 +26,8 @@ window.app = angular.module('app', requires);
 app.config(($locationProvider) => {
   $locationProvider.html5Mode(true);
 });
+import historyService from './historyService';
+app.service('historyService', historyService);
 
 // Directives
 app.directive('navLinks', navLinksDirective);
@@ -33,5 +36,6 @@ app.directive('counter', counterDirective);
 app.directive('menu', menuDirective);
 app.directive('list', listDirective);
 app.directive('link', linkDirective);
+app.directive('history', historyDirective);
 
 angular.bootstrap(document.getElementById('app'), ['app']);
