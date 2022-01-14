@@ -149,3 +149,23 @@ a {
 .sub-list {
   left: 100%;
 }
+
+.theme {
+  background-color: #bbb;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 140px;
+}
+
+.theme button {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+}

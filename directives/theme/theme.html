@@ -1,0 +1,7 @@
+<div class="theme">
+  <button
+    ng-repeat="theme in themes track by $index"
+    style="background-color: {{theme}}"
+    ng-click="setTheme(theme)"
+  ></button>
+</div>
