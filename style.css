@@ -23,13 +23,15 @@ h2 {
   border-radius: 6px;
 }
 
-.home-btn {
+.home-btn,
+.fetch {
   margin: 15px auto;
   display: flex;
   justify-content: space-around;
 }
 
-.home-btn button {
+.home-btn button,
+.fetch button {
   background-color: var(--main-color);
   color: white;
   padding: 10px 45px;
@@ -37,6 +39,23 @@ h2 {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.fetch button {
+  padding: 10px 30px;
+}
+
+.fetchData {
+  height: 210px;
+  overflow-y: auto;
+  padding: 5px;
+}
+
+.fetchData p {
+  padding: 10px;
+  background-color: var(--main-color);
+  color: white;
+  margin-bottom: 5px;
 }
 
 header {

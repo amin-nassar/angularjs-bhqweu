@@ -1,0 +1,13 @@
+<nav-bar title="Fetch Data"></nav-bar>
+<div class="fetch">
+  <button ng-click="fetchRes('todos')">Todos</button>
+  <button ng-click="fetchRes('posts')">Posts</button>
+  <button ng-click="fetchRes('comments')">Comments</button>
+</div>
+
+<section class="fetchData">
+  <p ng-repeat="item in fetchResult track by $index">{{item}}</p>
+</section>
+
+<history></history>
+<counter></counter>

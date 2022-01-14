@@ -8,7 +8,7 @@ import './style.css';
 import './home';
 import './form1';
 import './form2';
-
+import './fetch';
 // Services
 import historyService from './historyService';
 
@@ -23,7 +23,7 @@ import themeDirective from './directives/theme/theme';
 import counterDirective from './directives/counter/counter';
 
 // Create and bootstrap application
-const requires = ['ui.router', 'form1', 'form2', 'home'];
+const requires = ['ui.router', 'fetch', 'form1', 'form2', 'home'];
 
 window.app = angular.module('app', requires);
 app.config(($locationProvider) => {
